@@ -19,6 +19,9 @@ public class JokeController {
     public String showJoke(Model model){ // "/","" THIS is going to go in for ther root
         model.addAttribute("joke", jokeService.getJoke());
         return "index";
+        //that tells Thymeleaf to look for a basically a template
+        //
+        //file under templates called index.
     }
     //Remember, the model's effectively a map implementation, so we are adding in a property with the string
     //
